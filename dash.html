@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+nav{
+    height: 50px;
+    background: rgb(204, 255, 0);
+    opacity: 0.8;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 725px;            /*  Top tool bar */
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}                                         /*Spacing tool bar*/
+nav ul li a{
+    text-decoration: none;
+    color: rgb(9, 8, 8);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    transition: all 0.5s ease;      
+}
+nav ul li a:hover{
+    color: white;
+    background: red;
+}
+.log{
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 49px;
+}
+ input{
+    border: 0;
+  background: none;
+  display: block;
+  margin: 1px auto;
+  text-align: center;
+  border: 4px solid #e1ff00ec;
+  padding:8px 8px ;
+  width: 220px;
+  outline: none;
+  color: antiquewhite;
+  border-radius: 25px;
+  transition: 0.25px;
+}
+button{
+    
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+
+#container{
+    text-align: center;
+    
+}
+</style>
+
+        <title>KODAGU MOTODOC</title>
+
+    </head>
+    <nav>
+        <img src="loh.png" class="log">
+        <ul>
+              <li><a href="Login.html">LOGIN</a></li>
+              <li><a href="Dashboard.html">HOME</a></li>
+              <li><a href="About.html">ABOUT US</a></li>
+              <li><a href="Branch.html">BRANCH</a></li>
+              <li><a href="Contact.html">CONTACT US</a></li>
+          </ul>
+      </nav>   
+      <br></br>
+    <body background="road.png" text="white">
+
+        <h1 style="text-align:center; color: red;">- - - KODAGU - MOTODOC - - -</h1>
+        <br></br>
+        <marquee direction="right">
+        <h2 style="letter-spacing:10px; color: yellow;">!!! Big Boy Toys !!!</h2>
+    </marquee>
+        <br></br>
+        <h2 style="text-align: center; color: red;">  _/\_  HEY BUDDY THESE ARE THE RIDES AVAILABLE TO YOU  _/\_ </h2>
+        <br></br>
+        <a style="text-align: center;">
+        <ul id="bikes"></ul>
+    </a>
+        <br></br>
+        <h2 style="text-align: center; color: red;"> _/\_  ADD NEW RIDE TO THE GARAGE  _/\_ </h2>
+         <div id="form">
+        <p style="text-align: center;">Name:<input type="text" id="bname"></p>
+        <p style="text-align: center;">Year:<input type="text" id="model"></p>
+        <p style="text-align: center;">Base ID:<input type="text" id="id"></p>
+        <div id="container">
+        <button id="add-bike">ADD RIDE</button>
+    </div>
+    </div>    
+        <br></br>
+
+        <h2 style="text-align:center; color: red;">   _/\_  SELL RIDE FROM GARAGE  _/\_ </h2>
+        <p style="text-align:center ;color:wheat;">Enter bike ID: <input type="text" id="deletebike"></p>
+        <div id="container">
+       <button id="delete">Ride Sold</button>
+    </div>
+    <br></br>
+       <h2 style="text-align:center; color: red;"> _/\_ UPDATE RIDE DETAILS IN THE GARAGE _/\_</h2>
+       <p style="text-align: center;">Name:<input type="text" id="editname"></p>
+       <p style="text-align: center;">Base ID:<input type="text" id="editid"></p>
+       <div id="container">
+       <button id="update-bike">UPDATE RIDE</button>
+    </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="dash.js"></script>
+    </body>
+</html>
